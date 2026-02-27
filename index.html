@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenBook Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora"></div>
+    <header class="glass topbar">
+      <div>
+        <p class="eyebrow">OpenBook Studio</p>
+        <h1>Écris ton prochain livre avec style.</h1>
+      </div>
+      <button id="new-book-btn" class="btn btn-primary">+ Nouveau livre</button>
+    </header>
+
+    <main>
+      <section class="grid-two">
+        <article class="glass panel auth-panel">
+          <h2>Connexion</h2>
+          <p>Connecte-toi avec ton canal préféré.</p>
+          <form id="auth-form">
+            <input id="email-input" type="email" placeholder="email@exemple.com" required />
+            <div class="inline-actions">
+              <button class="btn btn-primary" type="submit">Connexion Email</button>
+              <button class="btn" type="button" id="google-login">Google</button>
+              <button class="btn" type="button" id="wattpad-login">WattPad</button>
+            </div>
+          </form>
+          <p id="auth-status" class="muted"></p>
+        </article>
+
+        <article class="glass panel">
+          <h2>Objectifs d'écriture</h2>
+          <form id="goals-form">
+            <label>Mots par jour
+              <input id="daily-words" type="number" min="100" step="50" placeholder="1500" />
+            </label>
+            <label>Objectif de la semaine
+              <input id="weekly-goal" type="text" placeholder="Écrire 1 chapitre" />
+            </label>
+            <button class="btn btn-primary" type="submit">Enregistrer objectifs</button>
+          </form>
+          <div class="goal-stats" id="goal-stats"></div>
+        </article>
+      </section>
+
+      <section class="glass panel shelf-panel">
+        <div class="section-head">
+          <div>
+            <h2>Home · Mes livres <span class="chevron">›</span></h2>
+            <p class="shelf-subtitle">Explore tes histoires en cours et tes brouillons.</p>
+          </div>
+          <span class="muted" id="book-counter">0 livre</span>
+        </div>
+        <div id="book-grid" class="book-grid book-shelf"></div>
+      </section>
+
+      <section class="glass panel shelf-panel">
+        <div class="section-head">
+          <div>
+            <h2>Bibliothèque partagée <span class="chevron">›</span></h2>
+            <p class="shelf-subtitle">Visible par tous, en lecture seule.</p>
+          </div>
+          <span class="muted">Non éditable</span>
+        </div>
+        <div id="shared-grid" class="book-grid book-shelf"></div>
+      </section>
+
+      <section id="editor" class="glass panel hidden">
+        <div class="section-head">
+          <h2 id="editor-title">Édition du livre</h2>
+          <div class="inline-actions">
+            <button class="btn" id="share-book-btn">Partager</button>
+            <button class="btn" id="wattpad-export-btn">Exporter WattPad</button>
+            <button class="btn btn-primary" id="save-book-btn">Sauvegarder</button>
+          </div>
+        </div>
+        <div class="editor-grid">
+          <label>Titre
+            <input id="book-title" type="text" placeholder="Titre du livre" />
+          </label>
+          <label>Couverture (URL)
+            <input id="book-cover" type="url" placeholder="https://..." />
+          </label>
+          <label>Description
+            <textarea id="book-description" rows="3" placeholder="Pitch du livre"></textarea>
+          </label>
+          <label>Personnages
+            <textarea id="book-characters" rows="3" placeholder="Personnages principaux"></textarea>
+          </label>
+          <label>Trame narrative
+            <textarea id="book-plot" rows="3" placeholder="Structure, arcs..."></textarea>
+          </label>
+          <label>Idées
+            <textarea id="book-ideas" rows="3" placeholder="Scènes, twist, notes"></textarea>
+          </label>
+          <label>Images / moodboard
+            <textarea id="book-images" rows="2" placeholder="Liens d'images séparés par des virgules"></textarea>
+          </label>
+          <label>Storyboard
+            <textarea id="book-storyboard" rows="3" placeholder="Chapitre 1..., chapitre 2..."></textarea>
+          </label>
+          <label>Chapitres (un par ligne)
+            <textarea id="book-chapters" rows="5" placeholder="Chapitre 1: ..."></textarea>
+          </label>
+          <label>Texte du jour
+            <textarea id="book-writing" rows="6" placeholder="Écris ici pour compter tes mots automatiquement."></textarea>
+          </label>
+        </div>
+        <p class="muted" id="word-count">0 mots écrits aujourd'hui</p>
+      </section>
+    </main>
+
+    <template id="book-card-template">
+      <article class="book-card">
+        <button class="book-cover-button open-btn" type="button">
+          <img class="cover" alt="Couverture" />
+        </button>
+        <div class="book-info">
+          <h3></h3>
+          <p class="meta"></p>
+          <p class="small description"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
