@@ -1,11 +1,36 @@
-- 👋 Hi, I’m @tongocharly
-- 👀 I am interested in UI design
-- 🌱 I’m currently learning CODE
-- 💞️ I'm looking to collaborate on a social media project
-- 📫 How to contact me Email: charly.martin.be@gmail.com
-- ⚡ Fun fact: ...
+# OpenBook Studio
 
-<!---
-tongocharly/tongocharly is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Application web (single-page) au style inspiré **OpenAI + Apple 2024** pour écrire et organiser des livres.
+
+## Fonctionnalités
+
+- Connexion simulée via **Email / Google / WattPad**.
+- Tableau de bord "Home" avec tes livres:
+  - couverture,
+  - nombre de mots écrits aujourd'hui,
+  - nombre de chapitres.
+- Éditeur complet pour chaque livre:
+  - chapitres,
+  - description,
+  - personnages,
+  - trame,
+  - idées,
+  - images/moodboard,
+  - storyboard,
+  - zone d'écriture avec compteur de mots en direct.
+- Objectifs personnalisés:
+  - mots par jour,
+  - objectif hebdomadaire (ex: "Écrire 1 chapitre").
+- Partage d'un livre en mode **lecture seule** dans la bibliothèque publique.
+- Export "rétrocompatible WattPad" (JSON prêt à transformer/importer).
+- Sauvegarde locale automatique dans `localStorage`.
+
+## Lancer le site
+
+Tu peux ouvrir `index.html` directement, ou lancer un serveur local:
+
+```bash
+python3 -m http.server 4173
+```
+
+Puis ouvre `http://localhost:4173`.
