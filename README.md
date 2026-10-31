@@ -1,10 +1,10 @@
-- 👋 Hi, I’m @tongocharly
-- 👀 I am interested in UI design
-- 🌱 I’m currently learning CODE
-- 📫 How to contact me Email: charly.martin.be@gmail.com
-- ⚡ Fun fact: ...
+<img  alt="SoraLogoApp" src="https://github.com/user-attachments/assets/06de3018-0d19-43e8-b58b-3fc3ab2373cd" align="left" width="200"/>
 
-<!---
-tongocharly/tongocharly is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+**Sora**
+
+Sora THE Browser to replace Arc 
+(In development)
+
+<a href="https://github.com/tongocharly/sora-browserr/releases/tag/v0.2.9">Download v0.2.9 (Last release)</a> 
+
+![Status badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatus.zen-browser.app%2Fshield-badges%2Fstatus.json&style=for-the-badge)
