@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @tongocharly
 - 👀 I am interested in UI design
 - 🌱 I’m currently learning CODE
-- 💞️ I'm looking to collaborate on a social media project
 - 📫 How to contact me Email: charly.martin.be@gmail.com
 - ⚡ Fun fact: ...
 
