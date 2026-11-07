@@ -5,6 +5,6 @@
 Sora THE Browser to replace Arc 
 (In development)
 
-<a href="https://github.com/tongocharly/sora-browserr/releases/tag/v0.3.1">Download v0.3.0 (Last release)</a> 
+<a href="https://github.com/tongocharly/sora-browserr/releases/tag/v0.3.1">Download v0.3.1 MacOS and Windows (Last release)</a> 
 
 ![Status badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatus.zen-browser.app%2Fshield-badges%2Fstatus.json&style=for-the-badge)
